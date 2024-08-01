@@ -1,0 +1,29 @@
+@import '../../sass/variables.scss';
+
+.container {
+  display: block;
+  margin: 0 auto;
+  padding: 0 30px;
+
+  &.small {
+    max-width: 768px;
+  }
+
+  &.medium {
+    max-width: 1100px;
+  }
+
+  &.large {
+    max-width: 1400px;
+  }
+
+  &.no-padd {
+    padding: 0;
+  }
+
+  @media all and (min-width: $tablet) {
+    &.extrasmall {
+      max-width: 470px;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+@import '../../sass/variables.scss';
+
+.client-grid {
+  // padding: 30px 0;
+  //build
+}
+
+.client-grid-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.client-grid-title {
+  width: 100%;
+  display: block;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 500;
+  margin: 0 0 5px 0;
+  text-align: center;
+
+  @media all and (min-width: $tablet) {
+    font-size: 18px;
+    margin: 0 0 40px 0;
+  }
+}
+
+.clients-mobile {
+  width: 70%;
+  margin: 0 auto;
+  display: block;
+  margin-top: 15px;
+
+  @media all and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.clients-desktop {
+  width: 100%;
+  display: none;
+
+  @media all and (min-width: $tablet) {
+    display: block;
+  }
+}

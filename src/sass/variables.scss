@@ -1,0 +1,24 @@
+@import "./fonts.scss";
+
+// colours
+$black: #000000;
+$white: #ffffff;
+$darkGrey: #231f20;
+
+// misc
+$transition: cubic-bezier(0.72, 0.24, 0.27, 0.76);
+$transitionMed: 0.5s $transition;
+
+// breakpoints
+$mobile: 640px;
+$tablet: 940px;
+$desktop: 1240px;
+
+// fonts
+$AvenirBlack: "Avenir Black", sans-serif;
+$AvenirMedium: "Avenir Medium", sans-serif;
+$AvenirMediumOblique: "Avenir Medium Oblique", sans-serif;
+
+.italic {
+  font-style: italic;
+}

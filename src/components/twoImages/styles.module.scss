@@ -1,0 +1,34 @@
+@import "../../sass/variables.scss";
+
+.two-images {
+  margin-top: 30px;
+
+  @media all and (min-width: $tablet) {
+    margin-top: 50px;
+  }
+}
+
+.two-images-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  img {
+    width: 100%;
+
+    &:first-of-type {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media all and (min-width: $tablet) {
+    img {
+      width: calc(50% - 6px);
+
+      &:first-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

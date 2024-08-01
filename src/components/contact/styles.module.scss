@@ -1,0 +1,110 @@
+@import "../../sass/variables.scss";
+
+.contact {
+  text-align: center;
+  padding: 20px 0 100px 0;
+  background-color: $black;
+  min-height: calc(100vh - 130px);
+
+  h1 {
+    color: $white;
+    font-size: 18px;
+    line-height: 1.4em;
+    margin: 0 0 60px 0;
+    font-weight: 400;
+  }
+
+  p {
+    color: $white;
+    font-size: 16px;
+    line-height: 1.4em;
+    margin: 0 0 40px 0;
+    font-weight: lighter;
+
+    a {
+      color: $white;
+      text-decoration: none;
+
+      &.tel {
+        text-decoration: none;
+      }
+      &.map {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .contact-socials {
+    margin-top: 100px;
+
+    p {
+      margin: 0 0 10px 0;
+    }
+
+    ul {
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+
+      li {
+        padding: 0;
+        margin: 0 0 0 10px;
+        list-style-type: none;
+
+        a {
+          background-color: $white;
+          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+          display: block;
+          padding: 8px;
+          text-decoration: none;
+
+          svg {
+            width: 100%;
+
+            * {
+              fill: $darkGrey;
+            }
+          }
+        }
+
+        &:first-of-type {
+          margin: 0;
+        }
+      }
+    }
+
+    a.planet-link {
+      display: block;
+      margin-top: 30px;
+
+      svg {
+        width: 143px;
+        display: inline-block;
+
+        * {
+          fill: $white;
+        }
+      }
+    }
+
+    img {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media all and (min-width: $tablet) {
+    h1 {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.4em;
+      font-weight: lighter;
+    }
+  }
+}

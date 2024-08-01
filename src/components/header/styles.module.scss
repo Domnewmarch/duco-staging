@@ -1,0 +1,161 @@
+@import '../../sass/variables.scss';
+
+.header {
+  padding: 20px 0;
+
+  &.dark {
+    background-color: $black;
+  }
+
+  @media all and (min-width: $tablet) {
+    padding: 40px 0;
+  }
+}
+
+.header-inner {
+  height: 50px;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+
+  svg {
+    width: 140px;
+  }
+
+  .dark & {
+    svg * {
+      fill: $white;
+    }
+  }
+
+  @media all and (min-width: $tablet) {
+    svg {
+      top: 50%;
+      left: 10%;
+      width: 180px;
+      position: absolute;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.header-hamb {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  position: relative;
+  transition: $transitionMed;
+
+  .header-hamb-line {
+    left: 50%;
+    width: 40px;
+    height: 3px;
+    position: absolute;
+    pointer-events: none;
+    background-color: $black;
+    transform: translateX(-50%);
+    transition: $transitionMed;
+
+    &:nth-of-type(1) {
+      top: 22px;
+    }
+
+    &:nth-of-type(2) {
+      top: 34px;
+    }
+  }
+
+  &.header-hamb-open {
+    transform: rotate(180deg);
+
+    .header-hamb-line {
+      top: 27px;
+
+      &:nth-of-type(1) {
+        transform: translateX(-50%) rotate(-45deg);
+      }
+
+      &:nth-of-type(2) {
+        transform: translateX(-50%) rotate(45deg);
+      }
+    }
+  }
+
+  .dark & {
+    .header-hamb-line {
+      background-color: $white;
+    }
+  }
+
+  @media all and (min-width: $tablet) {
+    top: 50%;
+    right: 3%;
+    position: absolute;
+    transform: translateY(-50%);
+
+    .header-hamb-line {
+      width: 50px;
+      height: 4px;
+
+      &:nth-of-type(1) {
+        top: 20px;
+      }
+
+      &:nth-of-type(2) {
+        top: 36px;
+      }
+    }
+
+    &.header-hamb-open {
+      transform: translateY(-50%) rotate(180deg);
+
+      .header-hamb-line {
+        top: 27px;
+      }
+    }
+  }
+}
+
+.hamburger-menu {
+  top: 60px;
+  opacity: 0;
+  right: -16px;
+  display: flex;
+  position: absolute;
+  pointer-events: none;
+  align-items: flex-end;
+  flex-direction: column;
+  background-color: $white;
+  padding: 20px 20px 20px 40px;
+  transition: $transitionMed;
+  z-index: 2;
+
+  a {
+    display: block;
+    color: $black;
+    font-size: 16px;
+    margin-bottom: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  &.hamburger-menu-open {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .dark & {
+    background-color: $black;
+
+    a {
+      color: $white;
+    }
+  }
+
+  @media all and (min-width: $tablet) {
+    a {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+@import "../../sass/variables.scss";
+
+.showreel {
+  display: block;
+}
+
+.showreel-inner {
+  font-size: 0;
+  background: $black;
+
+  iframe {
+    width: 100%;
+    display: block;
+    aspect-ratio: 16/9;
+  }
+
+  .video {
+    z-index: 0;
+    width: 100%;
+    display: none;
+    aspect-ratio: 16/9;
+
+    .vp-title {
+      display: none;
+    }
+  }
+
+  @media all and (min-width: $tablet) {
+    .video {
+      display: block;
+    }
+
+    iframe {
+      display: none;
+    }
+  }
+}

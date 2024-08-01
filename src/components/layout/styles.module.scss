@@ -1,0 +1,7 @@
+@import "../../sass/variables.scss";
+
+.layout {
+  &.dark {
+    background-color: $darkGrey;
+  }
+}

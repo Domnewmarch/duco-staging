@@ -1,0 +1,30 @@
+@import '../../sass/variables.scss';
+
+.threeRowContent {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+  margin-top: 50px;
+  @media all and (min-width: $tablet) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    h2 {
+      padding-top: 50px;
+      border-top: 4px solid #000;
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1em;
+      margin: 10px 0 !important;
+      color: black;
+    }
+  }
+}

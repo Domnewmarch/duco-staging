@@ -1,0 +1,64 @@
+@import "../../sass/variables.scss";
+
+.preloader {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 300;
+  height: 100vh;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  background-color: $black;
+  animation: hidePreloader 0.7s cubic-bezier(0.82, 0.24, 0.16, 0.77) forwards;
+  animation-delay: 1.7s;
+
+  svg {
+    max-width: 300px;
+
+    * {
+      fill: $white;
+    }
+  }
+
+  g g,
+  rect {
+    transform: translateY(-100%);
+  }
+
+  g g:first-of-type {
+    animation: groupAnimation 0.5s cubic-bezier(0.82, 0.24, 0.16, 0.77) forwards;
+    animation-delay: 0.5s;
+  }
+
+  rect {
+    animation: groupAnimation 0.5s cubic-bezier(0.82, 0.24, 0.16, 0.77) forwards;
+    animation-delay: 0.75s;
+  }
+
+  g g:last-of-type {
+    animation: groupAnimation 0.5s cubic-bezier(0.82, 0.24, 0.16, 0.77) forwards;
+    animation-delay: 1s;
+  }
+
+  @keyframes groupAnimation {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+
+  @keyframes hidePreloader {
+    0% {
+      opacity: 1;
+      pointer-events: visible;
+    }
+    100% {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+}
