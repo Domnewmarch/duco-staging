@@ -1,0 +1,24 @@
+@import '../../sass/variables.scss';
+
+.single-image {
+  margin-top: 30px;
+
+  @media all and (min-width: $tablet) {
+  }
+}
+
+.single-image-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  img {
+    width: 100%;
+  }
+
+  p {
+    margin: 8px 0 0 6px;
+    font-style: italic;
+  }
+}

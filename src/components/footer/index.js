@@ -16,7 +16,9 @@ const Footer = () => {
       <div className={styles.footerInner}>
         <div className={styles.footerLeft}>
           <p>
-            <Link to="/contact">Contact us</Link>
+            <Link className={styles.contactLink} to="/contact">
+              Contact us
+            </Link>
             <span className={styles.footerCopyIcon}>&copy;</span>
             <span className={styles.footerCopyText}>2019-2024 Duco</span>
             <a target="_blank" className={styles.planetLink} href="/">

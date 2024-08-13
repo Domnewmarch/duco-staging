@@ -5,6 +5,7 @@
   grid-template-columns: 1fr;
   gap: 50px;
   margin-top: 15px;
+  margin-bottom: 100px;
   @media all and (min-width: $tablet) {
     grid-template-columns: 1fr 1fr;
   }
@@ -25,10 +26,12 @@
       font-size: 1em;
       color: black;
       font-weight: bold;
+      font-family: 'Avenir Heavy';
     }
 
     a {
       color: black;
+      text-decoration: none;
     }
   }
 }

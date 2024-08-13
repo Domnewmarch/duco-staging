@@ -4,6 +4,7 @@ import Container from '../components/container';
 import IntroNew from '../components/introNew';
 import Layout from '../components/layout';
 import SingleImage from '../components/singleImage';
+import SingleImageLarge from '../components/singleImageLarge';
 
 const ContactPage = () => {
   const image = {
@@ -18,8 +19,8 @@ const ContactPage = () => {
             <h1>Let's Connect</h1>
             <p>Looking to solve a problem, expand your team's capabilites, build your business or simply get an external viewpoint? Contact us.</p>
           </div>
+          <SingleImageLarge image={image.image} note={image.note} />
         </Container>
-        <SingleImage image={image.image} note={image.note} />
         <ContactText />
       </Layout>
     </main>

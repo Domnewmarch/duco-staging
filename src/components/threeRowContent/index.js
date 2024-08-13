@@ -21,7 +21,7 @@ const ThreeRowContent = () => {
         <div className={styles.row}>
           <h2>Business for good</h2>
           <p>It’s our future to create.</p>
-          <p>As a 1% for the Planet member, we actively use our position to create a positive impact for businesses, people, and the planet.</p>
+          <p>As a 1% for the Planet member, we actively use our position to create a positive impact for businesses, people and the planet.</p>
           <p>To date, we have planted over 2,000 trees in the U.K. and are now scaling our vision internationally by planting one tree daily.</p>
         </div>
       </div>
