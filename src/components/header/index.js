@@ -21,7 +21,6 @@ const Header = ({ isContact = false }) => {
           <div className={styles.headerHambLine} />
         </div>
         <div className={`${styles.hamburgerMenu} ${hambOpen && styles.hamburgerMenuOpen}`}>
-          <Link to="/">Homepage</Link>
           <Link to="/our-story">About</Link>
           <Link to="/creative">Our Work</Link>
           <Link to="/contact">Contact</Link>
