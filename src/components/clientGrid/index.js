@@ -7,7 +7,7 @@ const ClientGrid = ({ clients = [] }) => {
   return (
     <div className={styles.clientGrid}>
       <p className={styles.clientGridTitle}>Trusted by</p>
-      <Container size="large">
+      <Container size="medium">
         <img className={styles.clientsMobile} src="/images/clients/clients-mobile-new.png" />
         <img className={styles.clientsDesktop} src="/images/clients/clients-desktop-new-1.png" />
       </Container>
