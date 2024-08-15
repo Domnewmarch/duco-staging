@@ -154,7 +154,7 @@ const IndexPage = () => {
     <main>
       <Layout>
         <Showreel />
-        <TextBlock text={textBlock1Text} />
+        <TextBlock />
         <ClientGrid clients={clientList} />
       </Layout>
     </main>

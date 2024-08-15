@@ -8,7 +8,7 @@ const IntroNew = ({ content, marginTop = false, titleCentre = false }) => {
       <div>
         <h1>About</h1>
         <p>We are Duco</p>
-        <p>(Pronounced Du-Co)</p>
+        <span>(Pronounced Du-Co)</span>
       </div>
     </Container>
   );

@@ -4,7 +4,6 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 50px;
-  margin-top: 50px;
   margin-bottom: 100px;
   @media all and (min-width: $tablet) {
     grid-template-columns: 1fr 1fr 1fr;
@@ -20,12 +19,16 @@
       border-top: 4px solid #000;
       font-style: italic;
       margin-bottom: 10px;
+      font-family: 'Avenir Light';
     }
 
     p {
-      font-size: 1em;
+      font-size: 14px;
       margin: 10px 0 !important;
       color: black;
+      font-weight: 300;
+      font-style: italic;
+      font-family: 'Avenir Light';
     }
   }
 }
