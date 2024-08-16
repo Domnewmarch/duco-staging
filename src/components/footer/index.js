@@ -1,14 +1,11 @@
 import { Link } from 'gatsby';
 import React from 'react';
-import Container from '../container';
 
 import * as styles from './styles.module.scss';
 
 import ForThePlanet from '../../svgs/for-the-planet.svg';
 import Instagram from '../../svgs/instagram.svg';
-import Trees from '../../svgs/leaf.svg';
 import Linkedin from '../../svgs/linkedin.svg';
-import Logo from '../../svgs/main-logo-black.svg';
 
 const Footer = () => {
   return (

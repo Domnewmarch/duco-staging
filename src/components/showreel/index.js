@@ -13,7 +13,7 @@ const Showreel = () => {
             {/* Add more source elements for different video formats (WebM, etc.) */}
             Your browser does not support the video tag.
           </video>
-          <iframe src="https://www.youtube.com/embed/QvraCdg4mRs?si=lt-jvIoM9Y53WQmw?autoplay=1" title="Duco - This is what we do." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/watch?v=FWSkwjlGs4Q" title="Duco - This is what we do." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </Container>
     </div>
