@@ -1,17 +1,22 @@
-import * as React from "react";
-import CreativeGrid from "../components/creativeGrid";
-import Layout from "../components/layout";
-import PageIntro from "../components/pageIntro";
+import * as React from 'react';
+import Container from '../components/container';
+import CreativeGrid from '../components/creativeGrid';
+import Layout from '../components/layout';
+import PageIntro from '../components/pageIntro';
 
 const CreativePage = () => {
   const introContent = {
-    title: "Creative"
+    title: 'Our Work'
   };
 
   return (
     <main>
       <Layout>
-        <PageIntro content={introContent} />
+        <Container>
+          <div>
+            <h1>Creative</h1>
+          </div>
+        </Container>
         <CreativeGrid />
       </Layout>
     </main>
@@ -22,7 +27,7 @@ export default CreativePage;
 
 export const Head = () => (
   <>
-    <title>Duco | Creative</title>
+    <title>Duco | Our Work</title>
     <meta name="description" content="Duco is a visionary creative and communication movement transforming businesses for good.." />
     <meta name="robots" content="index, follow" />
 
