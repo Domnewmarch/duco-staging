@@ -5,7 +5,7 @@ import Showreel from '../components/showreel';
 import TextBlock from '../components/textBlock';
 
 const IndexPage = () => {
-  const textBlock1Text = `<p>We're the ones behind the scenes,<br />The ones crafting the brands of tomorrow<br /><br /></p> <p>We are duco.<br />the industry's best-kept secret<br /></p>`;
+  const textBlock1Text = `<p>We're the ones behind the scenes,<br />The ones crafting the brands of tomorrow.<br /><br /></p> <p>We are duco.<br />the industry's best-kept secret.<br /></p>`;
 
   const clientList = [
     {
