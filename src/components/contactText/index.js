@@ -28,7 +28,7 @@ const ContactText = () => {
             <p>Sweden</p>
             <p>
               <a className={styles.directions} href="https://goo.gl/maps/directions" target="_blank">
-                Get directions
+                Directions
               </a>
             </p>
           </div>
