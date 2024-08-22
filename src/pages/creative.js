@@ -14,7 +14,7 @@ const CreativePage = () => {
       <Layout>
         <Container>
           <div>
-            <h1>Creative</h1>
+            <h1>Our Work</h1>
           </div>
         </Container>
         <CreativeGrid />

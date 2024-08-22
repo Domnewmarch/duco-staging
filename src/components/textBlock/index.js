@@ -10,14 +10,14 @@ const TextBlcok = ({ text }) => {
         <p>
           We're the ones behind the scenes,
           <br />
-          The ones crafting the brands of tomorrow
+          The ones crafting the brands of tomorrow.
           <br />
           <br />
         </p>
         <p>
           We are duco.
           <br />
-          the industry's best-kept secret
+          the industry's best-kept secret.
           <br />
         </p>
       </Container>
