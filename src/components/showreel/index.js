@@ -9,7 +9,7 @@ const Showreel = () => {
       <Container size="large">
         <div className={styles.showreelInner}>
           <video autoPlay muted loop className={styles.video}>
-            <source src="/images/showreel/showreel-v7.mp4" type="video/mp4" />
+            <source src="/images/showreel/showreel-new-2024.mp4" type="video/mp4" />
             {/* Add more source elements for different video formats (WebM, etc.) */}
             Your browser does not support the video tag.
           </video>
