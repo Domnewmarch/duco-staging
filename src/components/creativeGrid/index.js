@@ -1,13 +1,17 @@
-import React from "react";
-import Container from "../container";
-import ContentSlider from "../contentSlider";
+import React from 'react';
+import Container from '../container';
+import ContentSlider from '../contentSlider';
 
-import * as styles from "./styles.module.scss";
+import * as styles from './styles.module.scss';
 
 const CreativeGrid = () => {
-  const slider1 = [`/images/creative/Section 1 slideshow/1.1.jpg`, `/images/creative/Section 1 slideshow/1.2.jpg`, `/images/creative/Section 1 slideshow/1.3.jpg`, `/images/creative/Section 1 slideshow/1.4.jpg`];
+  const slider1 = [`/images/creative/Section 1 slideshow/1.2.jpg`, `/images/creative/Section 1 slideshow/1.3.jpg`, `/images/creative/Section 1 slideshow/1.4.jpg`, `/images/creative/Section 1 slideshow/1.5.png`, `/images/creative/Section 1 slideshow/1.6.png`, `/images/creative/Section 1 slideshow/1.7.png`, `/images/creative/Section 1 slideshow/1.8.png`];
 
   const fixed2 = `/images/creative/Section 2/02.1.jpg`;
+
+  const fixedSpongebob = `/images/creative/obey-spongebob.png`;
+
+  const fixedNikeQuantum = `/images/creative/nike-quantum.png`;
 
   const slider3 = [`/images/creative/Section 3/3.1.jpg`, `/images/creative/Section 3/3.2.jpg`, `/images/creative/Section 3/3.3.jpg`, `/images/creative/Section 3/3.4.jpg`, `/images/creative/Section 3/3.5.jpg`, `/images/creative/Section 3/3.6.jpg`];
 
@@ -24,6 +28,8 @@ const CreativeGrid = () => {
   const fixed9 = `/images/creative/Section 9/09.1.jpg`;
 
   const fixed10 = `/images/creative/Section 10/10.1-new.jpg`;
+
+  const mcmVideo = `/images/creative/mcm-video.mp4`;
 
   const slider12 = [`/images/creative/Section 12/12.1 new.png`, `/images/creative/Section 12/12.2 new.png`, `/images/creative/Section 12/12.3 new.png`, `/images/creative/Section 12/12.4 new.png`];
 
@@ -59,7 +65,7 @@ const CreativeGrid = () => {
 
   const fixed30 = `/images/creative/section 30/30.1.jpg`;
 
-  const slider31 = [`/images/creative/Section 31/31.1.jpg`, `/images/creative/Section 31/31.2.jpg`, `/images/creative/Section 31/31.3.jpg`, `/images/creative/Section 31/31.5.jpg`, `/images/creative/Section 31/31.6.jpg`, `/images/creative/Section 31/31.7.png`];
+  const slider31 = [`/images/creative/Section 31/31.1.jpg`, `/images/creative/Section 31/31.2.jpg`, `/images/creative/Section 31/31.3.jpg`, `/images/creative/Section 31/31.5.jpg`, `/images/creative/Section 31/boyhood.png`, `/images/creative/Section 31/mcm.png`];
 
   const fixed32 = `/images/creative/section 32/32.1.jpg`;
 
@@ -69,11 +75,19 @@ const CreativeGrid = () => {
 
   const fixed34 = `/images/creative/section 34/34.1.jpg`;
 
+  const pumaOne = `/images/creative/puma-one.png`;
+
+  const hhBottle = `/images/creative/hh-bottle.png`;
+
   return (
     <div className={styles.creativeGrid}>
       <div className={`${styles.full}`}>
         <Container>
-          <ContentSlider content={slider1} margin="top" />
+          <video autoPlay muted loop className={styles.video}>
+            <source src="/images/creative/northface-vid.mp4" type="video/mp4" />
+            {/* Add more source elements for different video formats (WebM, etc.) */}
+            Your browser does not support the video tag.
+          </video>
         </Container>
       </div>
       <div className={styles.creativeGridRow}>
@@ -94,6 +108,23 @@ const CreativeGrid = () => {
               <Container padding="no-padd">
                 <ContentSlider content={slider5} margin="none" />
               </Container>
+            </div>
+          </div>
+        </Container>
+      </div>
+      <div className={`${styles.full}`}>
+        <Container>
+          <ContentSlider content={slider1} />
+        </Container>
+      </div>
+      <div className={styles.creativeGridRow}>
+        <Container>
+          <div className={styles.creativeGridRowInner}>
+            <div className={`${styles.work} ${styles.half}`}>
+              <img src={fixedNikeQuantum} />
+            </div>
+            <div className={`${styles.work} ${styles.half}`}>
+              <img src={fixedSpongebob} />
             </div>
           </div>
         </Container>
@@ -127,7 +158,7 @@ const CreativeGrid = () => {
       </div>
       <div className={`${styles.full} ${styles.videoBlockCard}`}>
         <Container>
-          <video className={styles.videoMargin} autoPlay muted loop >
+          <video className={styles.videoMargin} autoPlay muted loop>
             <source src="/images/creative/section 11/section11.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
@@ -140,7 +171,7 @@ const CreativeGrid = () => {
               <ContentSlider content={slider12} margin="none" />
             </div>
             <div className={`${styles.work} ${styles.quarter} ${styles.videoBlockCard}`}>
-              <video className={styles.videoMargin} autoPlay muted loop >
+              <video className={styles.videoMargin} autoPlay muted loop>
                 <source src="/images/creative/section 13/TGE_lager_2.qt" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
@@ -189,7 +220,7 @@ const CreativeGrid = () => {
       </div>
       <div className={`${styles.full} ${styles.videoBlockCard}`}>
         <Container>
-          <video className={styles.videoMargin} autoPlay muted loop >
+          <video className={styles.videoMargin} autoPlay muted loop>
             <source src="/images/creative/section 21/section21.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
@@ -204,7 +235,7 @@ const CreativeGrid = () => {
               </Container>
             </div>
             <div className={`${styles.work} ${styles.quarter} ${styles.videoBlockCard}`}>
-              <video className={styles.videoMargin} autoPlay muted loop >
+              <video className={styles.videoMargin} autoPlay muted loop>
                 <source src="/images/creative/section 23/Duco-GG_Logo_Spin-full.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
@@ -233,6 +264,27 @@ const CreativeGrid = () => {
             </div>
             <div className={`${styles.work} ${styles.third}`}>
               <img src={fixed28} />
+            </div>
+          </div>
+        </Container>
+      </div>
+      <div className={`${styles.full}`}>
+        <Container>
+          <video autoPlay muted loop className={styles.video}>
+            <source src="/images/creative/mcm-video.mp4" type="video/mp4" />
+            {/* Add more source elements for different video formats (WebM, etc.) */}
+            Your browser does not support the video tag.
+          </video>
+        </Container>
+      </div>
+      <div className={styles.creativeGridRow}>
+        <Container>
+          <div className={styles.creativeGridRowInner}>
+            <div className={`${styles.work} ${styles.half}`}>
+              <img src={pumaOne} />
+            </div>
+            <div className={`${styles.work} ${styles.half}`}>
+              <img src={hhBottle} />
             </div>
           </div>
         </Container>
