@@ -1,4 +1,4 @@
-@import "../../sass/variables.scss";
+@import '../../sass/variables.scss';
 
 .work {
   video {
@@ -16,6 +16,10 @@
 
 .height-contain-large {
   max-height: 644px;
+}
+
+.height-contain-medium {
+  max-height: 360px;
 }
 
 .video-margin {

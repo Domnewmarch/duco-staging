@@ -15,6 +15,7 @@ const CreativePage = () => {
         <Container>
           <div>
             <h1>Our Work</h1>
+            <p style={{ marginBottom: '10px' }}>Concept Creation, Campaign, Branding, Product & Graphic Design.</p>
           </div>
         </Container>
         <CreativeGrid />

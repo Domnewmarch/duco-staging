@@ -81,7 +81,7 @@ const CreativeGrid = () => {
 
   return (
     <div className={styles.creativeGrid}>
-      <div className={`${styles.full}`}>
+      <div>
         <Container>
           <video autoPlay muted loop className={styles.video}>
             <source src="/images/creative/northface-vid.mp4" type="video/mp4" />
@@ -206,11 +206,11 @@ const CreativeGrid = () => {
       </div>
       <div className={styles.creativeGridRow}>
         <Container>
-          <div className={`${styles.creativeGridRowInner} ${styles.heightContain}`}>
+          <div className={`${styles.creativeGridRowInner} ${styles.heightContainMedium}`}>
             <div className={`${styles.work} ${styles.half}`}>
-              <img className={styles.heightContain} src={fixed19} />
+              <img style={{ maxHeight: '355px' }} className={styles.heightContainMedium} src={fixed19} />
             </div>
-            <div className={`${styles.work} ${styles.half} ${styles.heightContain}`}>
+            <div className={`${styles.work} ${styles.half} ${styles.heightContainMedium}`}>
               <Container padding="no-padd">
                 <ContentSlider content={slider20} margin="none" />
               </Container>
